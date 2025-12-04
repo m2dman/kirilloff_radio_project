@@ -13,6 +13,7 @@
     font-family: "Dela Gothic One";
     color: black;
     width: auto;
+    text-decoration: none;
 }
 
 #header {
@@ -20,10 +21,10 @@
     margin: 0px;
     position: sticky;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 5vh;
     text-align: center;
-    background: transparent;
+    background: white;
     backdrop-filter: blur(10px);
 }
 
@@ -38,7 +39,7 @@
     height: 400px;
     cursor: pointer;
     overflow: hidden;
-    margin: 15px;
+    margin: 5px;
 }
 
 .gallery {
@@ -54,22 +55,18 @@
 }
 
 #info {
-    padding: 5%;
     height: auto;
     width: auto;
     border: 2px black solid;
     border-radius: 10px;
-    margin: 1%;
-    margin-left: 1%;
     border-radius: 5px;
+    padding: 20px;
 }
 
 .content {
     padding: 5%;
     height: auto;
     width: auto;
-    margin: 1%;
-    margin-left: 1%;
 }
 
 html, body {
@@ -83,8 +80,8 @@ a {
 
 table {
     border-collapse: collapse;
-    width: 100%;    
-    margin: 20px 0;            
+    width: auto;    
+    margin: 0px 0;            
         }        
 th, td {
     border: 1px solid #ddd;
