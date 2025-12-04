@@ -1,14 +1,13 @@
 body {
     background-color: #000;
-    display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
-button {
-    padding: 5px 10px;
-    font-size: 20px;
+
+*{
+    padding: 0px;
+    margin: 0px;
 }
+
 .loading {
     width: 100px;
     height: 100px;
@@ -31,14 +30,18 @@ button {
     color: black;
     font-size: 32px;
 }
+.btns {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
 
 button {
     border: white 2px solid;
     border-radius: 2px;
     background-color: white;
     font-family: "Dela Gothic One", sans-serif;
-    height: 50px;
-    font-size: large;
 }
 
 input {
@@ -46,11 +49,11 @@ input {
     border-radius: 2px;
     background-color: white;
     font-family: "Dela Gothic One", sans-serif;
-    margin-left: 25px;
-    height: 50px;
-    font-size: large;
     outline: none;
+    width: auto;
+    height: auto;
 }
+
 
 @keyframes anim {
     0% {transform: rotate(0deg);}
