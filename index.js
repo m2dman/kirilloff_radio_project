@@ -17,15 +17,20 @@ fileInput.addEventListener('change', function(event) {
 });
 
 printButton.addEventListener('click', async (ev) => {
-    ev.target.remove();
-    document.querySelector('.loading').classList.add('show');
-    const picture = await spectrogram.printFrom(soundFile);
-    if(picture == 'error'){
-        document.querySelector('.loading').classList.add('error');
-    }else{
-        document.querySelector('.loading').remove();
-        document.body.append(picture);
+    if (soundFile != null) {
+        ev.target.remove();
+        fileInput.remove();
+        document.querySelector('.loading').classList.add('show');
+        const picture = await spectrogram.printFrom(soundFile);
+        if(picture == 'error'){
+            document.querySelector('.loading').classList.add('error');
+        }else{
+            document.querySelector('.loading').remove();
+            document.body.append(picture);
+        }
+
     }
 });
+
 
 
