@@ -19,6 +19,7 @@
         </li>
         <li>
             <a href="#tech" class="text"><h2>Технология изготовления</h2></a>
+            <a href="#webdev" class="text"><h3>Создание web-приложения</h3></a>
         </li>
         <li>
             <a href="#additional" class="text"><h2>Приложение</h2></a>
@@ -130,7 +131,38 @@
 Третьим этапом будет сборка. Из распечатанных деталей нужно собрать готовую модель
         </h3>
     </div>
-    
+
+    <div class="content" id="webdev">
+        <h3 class="text">
+            <p>Модель машинного обучения для рекомендательной системы радиостанций Татарстана представляет собой нейронную сеть на TensorFlow.js, которая анализирует предпочтения пользователя и предлагает наиболее подходящую радиостанцию.</p>
+            <br>Структура нейросети
+            <p>Input Layer (5 features)</p> <br> 
+                ↓ <br>
+            Dense Layer (16 neurons, ReLU activation) <br>
+                ↓ <br>
+            Dense Layer (8 neurons, ReLU activation) <br>
+                ↓ <br>
+            Output Layer (8 neurons, Softmax activation) <br> <br> <br>
+            Параметры обучения <br>
+            Оптимизатор: Adam <br>
+
+            Функция потерь: Categorical Crossentropy <br>
+
+            Метрика: Accuracy <br>
+
+            Эпохи: 100 <br>
+
+            Размер батча: 32 <br>
+
+            Размер тренировочного набора: 1000 примеров <br> <br> <br>
+            Алгоритм работы <br>
+            1. Предобработка данных <br>
+            ↓ <br>
+            2. Прямое распространение <br>
+            ↓ <br>
+            3. Получение рекомендации <br>
+        </h3>
+    </div>
     
 
     
@@ -167,4 +199,5 @@
 </body>
 </html>
 <script src="script1.js"></script>
+
 
